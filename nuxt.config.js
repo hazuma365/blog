@@ -40,5 +40,14 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  // for Github Pages Deploy
+  router: {
+    base: '/my-nuxt-project/'
+  },
+
+  generate: {
+    dir: 'docs'
   }
 }
