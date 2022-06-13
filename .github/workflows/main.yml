@@ -15,6 +15,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           yarn
+          yarn add @nuxtjs/vuetify -D
           yarn generate
 
       - name: Deploy 🚀
