@@ -1,9 +1,13 @@
 <template>
- <article>
-   <h1>{{blogs.title}}</h1>
-   <p>{{blogs.date}}</p>
-   <nuxt-content :document="blogs" />
- </article>
+   <v-container>
+     <v-row dense>
+       <article>
+         <h1>{{blogs.title}}</h1>
+         <p>{{blogs.date}}</p>
+         <nuxt-content :document="blogs" />
+       </article>
+      </v-row>
+    </v-container>
 </template>
 <script>
 export default {
