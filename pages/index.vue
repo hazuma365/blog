@@ -13,7 +13,7 @@
         <div>{{b.date}}</div>
       </v-card-subtitle>
        <v-card-text>
-         <div>本文</div>
+         <div>{{b.description}}</div>
        </v-card-text>
        <v-card-actions>
           <nuxt-link :to="'/blogs/'+ b.slug">more</nuxt-link>
