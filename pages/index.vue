@@ -1,5 +1,6 @@
 <template>
  <div>
+   <navbar/>
    <v-container>
      <v-row dense>
        <v-col
@@ -26,13 +27,6 @@
        </v-col>
      </v-row>
    </v-container>
-  <v-footer absolute>
-    <v-col
-      class="text-center"
-      cols="12"
-    >
-    </v-col>
-  </v-footer>
  </div>
 
 </template>
