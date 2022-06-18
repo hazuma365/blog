@@ -1,6 +1,7 @@
 <template>
  <div>
    <navbar/>
+   <topBanner/>
    <v-container>
      <v-row dense>
        <v-col
