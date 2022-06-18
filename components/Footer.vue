@@ -2,7 +2,6 @@
   <v-footer>
      <v-container>
         <v-col
-          class="text-center"
           cols="12"
         >
           (c){{ new Date().getFullYear() }} hazuma365
@@ -10,3 +9,8 @@
      </v-container>
   </v-footer>
 </template>
+<style>
+footer {
+  text-align: center;
+}
+</style>
