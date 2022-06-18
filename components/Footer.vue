@@ -1,5 +1,5 @@
 <template>
-  <v-footer absolute>
+  <v-footer>
      <v-container>
         <v-col
           class="text-center"
@@ -10,3 +10,23 @@
      </v-container>
   </v-footer>
 </template>
+<style>
+  html, body {
+    margin: 0;
+  }
+
+  .contents {
+    text-align: center;
+    height: 800px;
+    background: green;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background: #ccc;
+    text-align: center;
+  }
+</style>
