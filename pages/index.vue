@@ -14,7 +14,7 @@
                  class="text-h5"
                  v-text="article.title"
                ></v-card-title>
-               <v-card-subtitle v-text="article.date"></v-card-subtitle>
+               <v-card-subtitle v-text=formatDate(article.updatedAt)></v-card-subtitle>
                 <v-card-text>
                   <div>{{article.description}}</div>
                 </v-card-text>
@@ -32,10 +32,16 @@
 </template>
 <script>
 export default {
- async asyncData ({ $content, params }) {
-   const query = await $content('articles' || 'index')
-   const articles = await query.fetch()
-   return { articles }
- }
+   async asyncData ({ $content, params }) {
+     const query = await $content('articles' || 'index')
+     const articles = await query.sortBy('date', 'asc').fetch()
+     return { articles }
+   },
+  methods: {
+      formatDate(date) {
+        const options = { year: 'numeric', month: 'long', day: 'numeric' }
+        return new Date(date).toLocaleDateString('jp', options)
+      }
+   }
 }
 </script>
