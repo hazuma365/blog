@@ -4,7 +4,7 @@
    <v-container>
      <v-row dense>
        <v-col
-         v-for="b in blogs" :key="b.slug""
+         v-for="article in articles" :key="article.slug""
          cols="12"
        >
          <v-card>
@@ -12,14 +12,14 @@
              <div>
                <v-card-title
                  class="text-h5"
-                 v-text="b.title"
+                 v-text="article.title"
                ></v-card-title>
-               <v-card-subtitle v-text="b.date"></v-card-subtitle>
+               <v-card-subtitle v-text="article.date"></v-card-subtitle>
                 <v-card-text>
-                  <div>{{b.description}}</div>
+                  <div>{{article.description}}</div>
                 </v-card-text>
                <v-card-actions>
-                  <nuxt-link :to="'/blogs/'+ b.slug">more</nuxt-link>
+                  <nuxt-link :to="'/articles/'+ article.slug">more</nuxt-link>
                </v-card-actions>
              </div>
            </div>
@@ -33,9 +33,9 @@
 <script>
 export default {
  async asyncData ({ $content, params }) {
-   const query = await $content('blogs' || 'index').limit(10)
-   const blogs = await query.fetch()
-   return { blogs }
+   const query = await $content('articles' || 'index').limit(10)
+   const articles = await query.fetch()
+   return { articles }
  }
 }
 </script>
