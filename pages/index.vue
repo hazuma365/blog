@@ -33,7 +33,7 @@
 <script>
 export default {
  async asyncData ({ $content, params }) {
-   const query = await $content('articles' || 'index').limit(10)
+   const query = await $content('articles' || 'index')
    const articles = await query.fetch()
    return { articles }
  }
