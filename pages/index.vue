@@ -1,12 +1,12 @@
 <template>
  <div>
    <v-container>
-     <v-row dense >
+     <v-row>
        <v-col
          v-for="article in articles" :key="article.slug""
          cols="12"
        >
-         <v-card max-width="656">
+         <v-card>
            <div class="d-flex flex-no-wrap justify-space-between">
              <div>
                <v-card-title
