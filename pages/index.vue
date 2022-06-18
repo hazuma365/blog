@@ -1,7 +1,5 @@
 <template>
  <div>
-   <navbar/>
-   <topBanner/>
    <v-container>
      <v-row dense>
        <v-col
@@ -15,7 +13,7 @@
                  class="text-h5"
                  v-text="article.title"
                ></v-card-title>
-               <v-card-subtitle v-text=formatDate(article.updatedAt)></v-card-subtitle>
+               <v-card-subtitle v-text=formatDate(article.date)></v-card-subtitle>
                 <v-card-text>
                   <div>{{article.description}}</div>
                 </v-card-text>
@@ -35,7 +33,7 @@
 export default {
    async asyncData ({ $content, params }) {
      const query = await $content('articles' || 'index')
-     const articles = await query.sortBy('date', 'asc').fetch()
+     const articles = await query.sortBy('date', 'desc').fetch()
      return { articles }
    },
   methods: {

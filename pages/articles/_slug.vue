@@ -9,6 +9,7 @@
                  v-text="article.title"
                ></v-card-title>
                <v-card-subtitle v-text=formatDate(article.updatedAt)></v-card-subtitle>
+             <v-divider></v-divider>
              <v-card-text>
                 <nuxt-content :document="article" />
              </v-card-text>
