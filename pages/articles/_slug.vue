@@ -2,7 +2,7 @@
    <v-container>
      <v-row dense>
         <v-col cols="12">
-        <v-card>
+         <v-card max-width="656">
            <article>
                <v-card-title
                  class="text-h1"
