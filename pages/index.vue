@@ -5,10 +5,8 @@
        <v-col
          v-for="article in articles" :key="article.slug""
          cols="12"
-       >
-         <v-card>
-           <div class="d-flex flex-no-wrap justify-space-between">
-             <div>
+         align="center">
+         <v-card width="645">
                <v-card-title
                  class="text-h5"
                  v-text="article.title"
@@ -20,8 +18,6 @@
                <v-card-actions>
                   <nuxt-link :to="'/articles/'+ article.slug">more</nuxt-link>
                </v-card-actions>
-             </div>
-           </div>
          </v-card>
        </v-col>
      </v-row>

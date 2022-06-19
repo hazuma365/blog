@@ -1,8 +1,8 @@
 <template>
    <v-container>
-     <v-row dense>
-        <v-col cols="12">
-         <v-card>
+     <v-row >
+        <v-col align="center">
+         <v-card width="645">
            <article>
                <v-card-title
                  class="text-h1"
@@ -44,6 +44,9 @@ export default {
 </script>
 
 <style>
+  .nuxt-content {
+      text-align: left;
+  }
   .nuxt-content h1 {
     font-weight: bold;
     font-size: 30px;
