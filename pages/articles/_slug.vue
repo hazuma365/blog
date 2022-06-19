@@ -15,7 +15,7 @@
                </v-card-subtitle>
              <v-divider></v-divider>
              <v-card-text>
-                <nuxt-content :document="article" />
+                <nuxt-content class="markdown-body" :document="article" />
              </v-card-text>
            </article>
         </v-card>
