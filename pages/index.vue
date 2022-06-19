@@ -17,7 +17,7 @@
                   </div>
                </v-card-subtitle>
                <v-card-actions>
-                  <nuxt-link :to="'/articles/'+ article.slug">read more..</nuxt-link>
+                  <nuxt-link :to="'/articles/'+ article.slug">read</nuxt-link>
                </v-card-actions>
          </v-card>
        </v-col>
