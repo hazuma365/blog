@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'my-nuxt-project',
+    title: 'blog',
     htmlAttrs: {
       lang: 'en'
     },
@@ -46,7 +46,7 @@ export default {
 
   // for Github Pages Deploy
   router: {
-    base: '/my-nuxt-project/'
+    base: '/blog/'
   },
 
   generate: {
