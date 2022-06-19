@@ -5,10 +5,14 @@
          <v-card width="645">
            <article>
                <v-card-title
-                 class="text-h1"
+                 class="text-left"
                  v-text="article.title"
                ></v-card-title>
-               <v-card-subtitle v-text=formatDate(article.updatedAt)></v-card-subtitle>
+               <v-card-subtitle >
+                     <div style="text-align: left">
+                       {{formatDate(article.date)}}
+                     </div>
+               </v-card-subtitle>
              <v-divider></v-divider>
              <v-card-text>
                 <nuxt-content :document="article" />

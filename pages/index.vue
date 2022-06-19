@@ -11,9 +11,15 @@
                  class="text-h5"
                  v-text="article.title"
                ></v-card-title>
-               <v-card-subtitle v-text=formatDate(article.date)></v-card-subtitle>
+               <v-card-subtitle>
+                  <div style="text-align: left">
+                    {{formatDate(article.updatedAt)}}
+                  </div>
+               </v-card-subtitle>
                 <v-card-text>
-                  <div>{{article.description}}</div>
+                  <div style="text-align: left">
+                    {{article.description}}
+                  </div>
                 </v-card-text>
                <v-card-actions>
                   <nuxt-link :to="'/articles/'+ article.slug">more</nuxt-link>
