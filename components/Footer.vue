@@ -1,16 +1,7 @@
 <template>
   <v-footer>
-     <v-container>
-        <v-col
-          cols="12"
-        >
-          (c){{ new Date().getFullYear() }} hazuma365
-        </v-col>
-     </v-container>
+    <v-col cols="12">
+      <nuxt-link to="/">home</nuxt-link>
+    </v-col>
   </v-footer>
 </template>
-<style>
-footer {
-  text-align: center;
-}
-</style>
