@@ -1,5 +1,5 @@
 <template>
-  <v-footer>
+  <v-footer color="#FFFFFF">
     <v-col cols="12">
       <button v-on:click="home">Home</button>
     </v-col>
