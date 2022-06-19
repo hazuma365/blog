@@ -22,7 +22,7 @@
                   </div>
                 </v-card-text>
                <v-card-actions>
-                  <nuxt-link :to="'/articles/'+ article.slug">more</nuxt-link>
+                  <nuxt-link :to="'/articles/'+ article.slug">read more..</nuxt-link>
                </v-card-actions>
          </v-card>
        </v-col>
